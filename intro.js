@@ -1,9 +1,9 @@
-// var total = 0;
-// var count = 1;
+var total = 0;
+var count = 1;
 
-// while( count <= 10 ){
-//     total += count;
-//     count++;
-// }
+while( count <= 10 ){
+    total += count;
+    count++;
+}
 
-// console.log(total)
+console.log(total)
