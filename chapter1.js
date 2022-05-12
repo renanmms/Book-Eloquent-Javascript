@@ -1,14 +1,16 @@
 // Order of precedence
 console.log("----- Arithmetic -----");
-console.log(100+4*11);
+console.log(100+4*11); 
 console.log((100+4)*11);
 
 console.log(314 % 100);
 console.log(144 % (12 + 1));
 
 console.log("----- Numbers -----");
+
+let maxValue = Number.MAX_VALUE;
 console.log(typeof(2));
-let isInt = Number.isInteger(Number.MAX_VALUE)
+console.log(maxValue);
 console.log(Infinity);
 
 console.log("----- Strings -----");
@@ -17,7 +19,7 @@ console.log('Lie on the Ocean');
 console.log(`Float on the ocean`)
 
 console.log("----- Escaping characters -----");
-console.log("");
+console.log("\r");
 
 // Newline escaping character
 console.log("\n");
@@ -42,6 +44,8 @@ console.log(`half of 100 is ${100 / 2}`);
 console.log("---- Unary operators ----");
 console.log(typeof(Math.PI));
 console.log(typeof(`The number of PI is ${Math.PI}`));
+console.log(typeof(true));
+console.log(typeof(undefined));
 
 // The minus operator can be used as unary and binary operator
 console.log(- (10 - 2));
@@ -95,4 +99,5 @@ console.log("---- Short-Circuiting of Logical Operators ----");
 // JS convert the value of its left to boolean, to decide what to do
 console.log(`null || \"user\" = ${null || "user"}`);
 console.log(`undefined || \"user\" = ${undefined || "user"}`);
+console.log(`undefined && \"user\" = ${undefined && "user"}`);
 console.log(`\"Agnes\" || \"user\" = ${"Agnes" || "user"}`);
