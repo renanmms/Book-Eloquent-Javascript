@@ -32,3 +32,4 @@ do {
     console.log((even % 3) ? "~" : "^");
     even--;
 }while(even >= 0)
+
