@@ -28,8 +28,25 @@ while (even < 1000) {
 }
 
 
-do {  
-    console.log((even % 3) ? "~" : "^");
-    even--;
-}while(even >= 0)
+// do {  
+//     console.log((even % 3) ? "~" : "^");
+//     even--;
+// }while(even >= 0)
 
+let isNotNumber = Number.isNaN(undefined || NaN);
+
+console.log(isNotNumber);
+
+// This is a single line comment
+
+/**
+ * 
+ * This is a multi line comment
+ */
+
+// Looping a triangle
+for(let i = 0; i < 8 ; i++){
+    for(let j = 0; i < 8; j++){
+        console.log("#");
+    }
+}
