@@ -12,7 +12,7 @@ const test = function(){
 
 printHello(); // Hello World Renan
 
-console.log(test()); // undefine;
+console.log(test()); // undefined;
 
 
 // Binding and Scope
@@ -45,3 +45,39 @@ const hummus = function(factor) {
   
 //ingredient(2, "jar", "fruits");
 hummus(3);
+
+// Function declaration
+
+console.log("The best programming language is: ", bestProgrammingLang());
+
+function bestProgrammingLang(){
+    return "The one who pay your bills ;)";
+}
+
+// Arrow functions
+
+let n = 0.353;
+
+let percentageNotation = (n) => `${Math.round(n*100)}%`;
+
+console.log(percentageNotation(n));
+
+// Call Stack
+
+function chicken() {
+    //return egg();
+    return "chicken";
+}
+
+function egg() {
+    return chicken();
+}
+
+console.log(egg() + " came first.");
+
+// Optional Arguments
+
+percentageNotation = (n, negative = false) => (negative) ? `${(n*100)*-1}` : `${n*100}`;
+
+console.log(percentageNotation(0.2));
+console.log(percentageNotation(0.2, true));
