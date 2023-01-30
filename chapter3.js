@@ -81,3 +81,5 @@ percentageNotation = (n, negative = false) => (negative) ? `${(n*100)*-1}` : `${
 
 console.log(percentageNotation(0.2));
 console.log(percentageNotation(0.2, true));
+
+console.log("This", "is", "an", "example", "of", "optional", "arguments");
